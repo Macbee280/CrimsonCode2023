@@ -1,0 +1,22 @@
+language: de
+pipeline:
+  - name: "SpacyNLP"
+  - name: "SpacyTokenizer"
+  - name: "SpacyFeaturizer"
+  - name: "RegexFeaturizer"
+  - name: "CRFEntityExtractor"
+  - name: "EntitySynonymMapper"
+  - name: "SklearnIntentClassifier"
+policies:
+  - name: TEDPolicy
+    batch_size: 50
+    epochs: 20
+    max_training_samples: 300
+    max_history: 5
+  - name: FallbackPolicy
+    fallback_action_name: action_default_fallback
+    nlu_threshold: 0.2
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: FormPolicy
+  - name: MappingPolicy
