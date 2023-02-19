@@ -4,7 +4,7 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 # Connect to OpenAI API
-openai.api_key = "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"
+openai.api_key = "API_Key_Here"
 
 def webgpt(query):
 # Define search query
