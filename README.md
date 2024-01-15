@@ -1,14 +1,4 @@
 
-
----
-title: Moll-E: Crimson Code 2023
-
-date: 2023-02-17
-
-preview: An artificial intelligence personal assistant prototype.
----
-
-
 # Moll-E: An AI Personal Assistant
 
 ## Overview
